@@ -17,10 +17,6 @@ class EmailReader:
 		self.spam_list = []
 		self.pastrami_list = []
 
-	# # account credentials
-	# username = "zfish@mail.yu.edu"
-	# password = "hackYU2021"
-
 	def clean(text):
 	    # clean text for creating a folder
 	    return "".join(c if c.isalnum() else "_" for c in text)

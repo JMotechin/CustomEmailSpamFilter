@@ -13,7 +13,6 @@ def main():
 
 
 	account = EmailReader(email, password)
-	#account = EmailReader("HackYUExample@gmail.com", "hackyu2021")
 	account.psak()
 	spam = account.spam_list
 	notSpam = account.pastrami_list

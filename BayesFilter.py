@@ -110,15 +110,16 @@ class BayesFilter:
 		#classifier.show_most_informative_features(5)
 
 
-
+		print("Your spam filter is all set. ")
 		bool = True
 		while(bool):
 
 
-			print("What would you like to Test")
+			print("Please enter the subject line which you would like to test. To exit, type \"close\"")
 			title = str(input())
 			if title == "close":
 				bool = False
+				break
 			features = create_word_features(title.split())
 			print("Your Email is :" ,classifier.classify(features))
 
